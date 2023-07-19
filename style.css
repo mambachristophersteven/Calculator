@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;1,600&display=swap');
+@font-face {
+    font-family: poppins;
+    src: url(./Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: fingerpaint;
+    src: url(./FingerPaint-Regular.ttf);
+}
+/* root variables */
+
+/* colors for light theme */
+:root{
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677463;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-1: 0.4rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+
+}
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins,sans-serif;
+    background: var(--color-background);
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+}
+
+a{
+    color: var(--color-dark);
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 0.87rem;
+}
+
+h4{
+    font-size: 0.8rem;
+}
+
+h5{
+    font-size: 0.77rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    background: var(--color-white);
+    padding: 20px;
+    border-radius: 10px;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.calculator:hover{
+    box-shadow: none;
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px; 
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 30px;
+    background: var(--color-light);
+}
+
+#equal{
+    width: 135px;
+    background: var(--color-success);
+}
+
+.operator{
+    background: var(--color-primary);
+    color: var(--color-white);
+}
